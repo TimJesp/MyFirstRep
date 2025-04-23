@@ -5,33 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="bootstrap.min.css" rel="stylesheet">
-    <script src="jquery-3.6.0.js"></script>
     <title>Hello, world!</title>
-  </head>   
+  </head>
   <body>
-    <p class="display h1 pb-3">Boot H1</p>
-    <p class="display h2 pb-3">Boot H2</p>
-    <p class="display h3 pb-3">Boot H3</p>
-
-    <div class="list-group">
-        <button type="button" onclick="changeColor(this)" class="list-group-item list-group-item-action active aria-current='true'">First button</button>
-        <button type="button" onclick="changeColor(this)" class="list-group-item list-group-item-action">Second button</button>
-        <button type="button" onclick="changeColor(this)" class="list-group-item list-group-item-action">Third button</button>
-    </div>
-    <h1>This is the change commited</h1>
-    <p>This also</p>
-    <p>This was added from GitHub.com</p>
-
-    <figure class="figure">
-        <img class="figure.img img-fluid img-thumbnail" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png" alt="Pika">
-        <figcaption class="figure-caption text-end" >PikaPika<i class="bi-alarm text-danger"></i></figcaption> 
-    </figure>
-    <script>
-        function changeColor(button) {
-            $("button").addClass("list-group-item-success");
-        }
-    </script>
-</body>
+    <div class="container">
+        <div class="row">
+          <div class="col-1 bg-secondary">
+            1 of 2
+          </div>
+          <div class="col-10 bg-primary">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-secondary">
+            1 of 3
+          </div>
+          <div class="col bg-success">
+            2 of 3
+          </div>
+          <div class="col bg-primary">
+            3 of 3
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
